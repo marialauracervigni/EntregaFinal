@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maria Laura Cervigni"/>
+    <meta name="description" content="Proyecto WEB basado en el grupo The Weeknd">
+    <meta name="keywords" content="PROYECTO, PROYECTOS WEB, MUSICA, BANDAS, POP, HIP HOP, CANTANTES">
+    <title>HISTORY</title>
+    <!-- CSS --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/nuevoEstilocss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="../index.html">THE WEEKND</a>
+            <a href="#">HISTORY</a>
+            <a href="./music.html">MUSIC</a>
+            <a href="./videos.html">VIDEOS</a>
+            <a href="./contact.html">CONTACT</a>
+        </div>
+    </div>
+    <video autoplay loop id="myVideo">
+        <source src="../img/videoIndex.mp4" type="video/mp4">
+    </video>
+    <div class="contentInicio">
+        <span>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer" id="myBtn" title="Parar/Continuar" onclick="myFunction()">&#128400; </span>
+        </span>
+        <div class="tech-slideshow">
+            <section class="mover-1">
+                <p></p>
+                <p>La vida de The Weeknd se inicia el 16 de febrero de 1990, fecha en la que nació. 
+                Su verdadero nombre es Abel Makkonen Tesfaye. Es de Toronto, Ontario, Canadá y es
+                actualmente uno de los cantantes y compositores más influyentes y populares.</p>
+                <p>Su mejor amigo en la escuela era un niño de Scarborough llamado La Mar Taylor. 
+                En 2007, a los 17 años, se convencieron de dejar la escuela y se dedicaron a 
+                ‘la fiesta desenfrenada’.
+                Tesfaye finalmente consiguió un trabajo y, al mismo tiempo, comenzó a escribir 
+                canciones sobre el uso de drogas, el sexo casual y la alienación. Se cruzó con el 
+                músico y productor Jeremy Rose y empezaron a trabajar juntos. Su colaboración 
+                dio como resultado tres canciones que pronto se hicieron populares: The Morning, 
+                Loft Music y What You Need, con letras en parte cantadas y en parte rapeadas.</p>
+                <p>Cuenta que eligió su nombre artístico, cortando una “e” de “the Weekend” para 
+                evitar que sea similar al de una banda canadiense que ya era conocida.
+                Su popularidad creció exponencialmente después de que sus canciones se publicaran 
+                en el blog del rapero canadiense Drake.</p>
+                <p>Con Drake como admirador y patrocinador, Tesfaye tuvo un mayor acceso a oportunidades 
+                de grabación, y en marzo de 2011 había reunido un ‘mixtape’ de nueve canciones, 
+                House of Balloons , que lanzó como descarga gratuita.</p>
+                <p>El álbum ganó la atención de la crítica y fue preseleccionado para el Premio de Música
+                Polaris de Canadá. Tesfaye hizo su primera aparición pública como The Weeknd en 
+                un club nocturno de Toronto en julio de ese año. Lanzó dos temas gratuitos más en 2011, 
+                Thursday y Echoes of Silence. Además, contribuyó al lanzamiento de Drake 2011 Take Care.</p>
+                <p>The Weeknd se asoció con Republic Records en septiembre de 2012. Dos meses después lanzó 
+                Trilogy , compuesta por versiones remasterizadas de sus canciones anteriores; 
+                se convirtió en un éxito de ventas. Sin embargo, el primer álbum de estudio de 
+                The Weeknd, Kiss Land (2013), no logró penetrar más allá de sus fans.
+                Posteriormente, The Weeknd le pidió ayuda a su compañía discográfica para crear 
+                canciones. El resultado fue una relación profesional con el exitoso productor sueco 
+                Max Martin y un dueto con la estrella del pop Ariana Grande en Love Me Harder.</p>
+                <p>Sin pelos en la lengua, el músico ha dicho que los Grammy “siguen siendo corruptos” 
+                después de no recibir nominaciones en la última lista de premios por su álbum de 2020 
+                After Hours , ni por el sencillo de 2019 Blinding Lights, que se convirtió en la 
+                canción más importante del año pasado. Muchos le dan la razón.</p>        
+            </section> 
+        </div>
+        <nav class="pie">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/theweeknd/" class="redes" target=”_blank”>
+                    <img src="../img/instagram.png" class="icon" alt="Icono de Instragram" title="Instagram"></a> 
+                    <a href="https://www.youtube.com/channel/UC0WP5P-ufpRfjbNrmOWwLBQ" class="redes" target=”_blank”>
+                    <img src="../img/youtube.png" class="icon" alt="Icono de YouTube" title="Youtube"></a>
+                    <a href="https://twitter.com/TheWeeknd" class="redes" target=”_blank”>
+                    <img src="../img/twitter.png" class="icon" alt="Icono de Twitter" title="Twitter"></a>
+                    <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ" class="redes" target=”_blank”>
+                    <img src="../img/spotify.png" class="icon" alt="Icono de Spotify" title="Spotify"></a>
+                </li>
+            </ul>         
+        </nav> 
+    </div> 
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "&#128400;";
+    } else {
+        video.pause();
+        btn.innerHTML = "&#128406;";
+    }}
+
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    </script>
+</body>
+</html>
