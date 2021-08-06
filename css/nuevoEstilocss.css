@@ -127,7 +127,10 @@ input[type="email"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  overflow: auto; }
 
 iframe {
   height: 280px;
@@ -253,3 +256,7 @@ img {
 @keyframes moveSlideshow {
   100% {
     transform: translateY(-66.6666%); } }
+
+.padre {
+  display: flex;
+  flex-wrap: nowrap; }

@@ -161,6 +161,9 @@ input[type="email"]
     flex-wrap: wrap;
     justify-content:space-around; 
     align-items:center;  
+    top: 0;
+    bottom:0;
+    overflow: auto;
 }
 
 iframe{
@@ -169,7 +172,6 @@ iframe{
     margin: 20px;
     padding: 10px;
     max-width: 320px; 
-
 } 
 
 img{
@@ -309,4 +311,9 @@ img{
     100% { 
         transform: translateY(-66.6666%);  
     }
+}
+
+.padre{
+    display: flex;
+    flex-wrap: nowrap; 
 }
